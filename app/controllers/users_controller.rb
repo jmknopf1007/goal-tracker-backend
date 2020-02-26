@@ -28,6 +28,12 @@ class UsersController < ApplicationController
         render :json => {status: 'deleted'}
     end
 
+    def user_objectives
+        user = User.find(params[:id])
+        objectives = user.objectives 
+        render :json => {objectives: objectives} 
+    end
+
     private
 
     def user_params
