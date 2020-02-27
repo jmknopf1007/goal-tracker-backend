@@ -1,14 +1,14 @@
 class ObjectivesController < ApplicationController
 
-    def index 
-        objectives = Objective.all
-        render :json => objectives
-    end 
+    # def index 
+    #     objectives = Objective.all
+    #     render :json => objectives
+    # end 
 
-    def show 
-        objective = Objective.find(params[:id])
-        render :json => objective
-    end 
+    # def show 
+    #     objective = Objective.find(params[:id])
+    #     render :json => objective
+    # end 
 
     def create 
         objective = Objective.create(objective_params)
@@ -26,7 +26,13 @@ class ObjectivesController < ApplicationController
         objective = Objective.find(params[:id])
         objective.destroy
         render :json => {status: 'deleted'}
-    end 
+    end
+    
+    # def objective_goals
+    #     objective = Objective.find(params[:id])
+    #     goals = objective.goals
+    #     render :json => {goals: goals}
+    # end
 
     private
 

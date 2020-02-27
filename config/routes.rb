@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
   resources :goals
   resources :objectives
+  # get '/users/:id/objectives/:id/goals', to: 'objectives#objective_goals'
   resources :users
-  get '/users/:id/objectives', to: 'users#user_objectives' #as: 'objectives'
+  # get '/users/:id/objectives', to: 'users#user_objectives' 
   namespace :api do
     namespace :v1 do
       post '/auth', to: 'auth#create'

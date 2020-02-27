@@ -16,23 +16,23 @@ class UsersController < ApplicationController
         render json: { user: UserSerializer.new(user), jwt: issue_token(user) }, status: :accepted   
     end
 
-    def update
-        user = User.find(params[:id])
-        user.update(user_params)
-        render :json => user
-    end
+    # def update
+    #     user = User.find(params[:id])
+    #     user.update(user_params)
+    #     render :json => user
+    # end
 
-    def destroy
-        user = User.find(params[:id])
-        user.destroy
-        render :json => {status: 'deleted'}
-    end
+    # def destroy
+    #     user = User.find(params[:id])
+    #     user.destroy
+    #     render :json => {status: 'deleted'}
+    # end
 
-    def user_objectives
-        user = User.find(params[:id])
-        objectives = user.objectives 
-        render :json => {objectives: objectives} 
-    end
+    # def user_objectives
+    #     user = User.find(params[:id])
+    #     objectives = user.objectives 
+    #     render :json => {objectives: objectives} 
+    # end
 
     private
 
