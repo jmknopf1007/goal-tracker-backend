@@ -18,6 +18,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_201639) do
   create_table "goals", force: :cascade do |t|
     t.string "description"
     t.string "category"
+    t.boolean "complete_status", default: false
     t.integer "day_count", default: 0
     t.integer "objective_id"
     t.datetime "created_at", precision: 6, null: false
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(version: 2020_02_20_201639) do
 
   create_table "objectives", force: :cascade do |t|
     t.string "title"
+    t.boolean "complete_status", default: false
     t.integer "user_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false

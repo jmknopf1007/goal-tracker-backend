@@ -3,6 +3,7 @@ class CreateGoals < ActiveRecord::Migration[6.0]
     create_table :goals do |t|
       t.string :description
       t.string :category
+      t.boolean :complete_status, :default => false
       t.integer :day_count, :default => 0 
       t.integer :objective_id
 

@@ -37,7 +37,7 @@ class ObjectivesController < ApplicationController
     private
 
     def objective_params
-      params.require(:objective).permit(:title, :user_id)
+      params.require(:objective).permit(:title, :complete_status, :user_id)
     end
 
 end
