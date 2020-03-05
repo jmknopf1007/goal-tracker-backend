@@ -3,4 +3,7 @@ class ObjectiveSerializer < ActiveModel::Serializer
 
   #has_many :goals
   #belongs_to :user
+  def goals 
+    self.object.goals.sort_by { |goal| goal.updated_at }.reverse
+  end
 end
