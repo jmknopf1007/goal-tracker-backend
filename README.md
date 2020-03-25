@@ -1,24 +1,26 @@
-# README
+## Elevate!
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Elevate! is a web application that helps users streamline as well as<br>
+organize their daily goals for a given objective (ex. "Learn Python").<br>
+The idea for this app was to create a tool to help making the process of<br>
+learning a new skill easier, and more efficient. 
 
-Things you may want to cover:
+https://my-goal-tracker-app-client.herokuapp.com/
 
-* Ruby version
+# Built With
 
-* System dependencies
+ruby ~> 2.6.1<br>
+rails ~> 6.0.2<br>
+pg ~> 12.0<br>
+bcrypt ~> 3.1.7<br>
+semantic-ui-react ~> 0.88.2<br>
+npm ~> 6.13.7<br>
+node ~> 13.3.0<br>
+activerecord-reset-pk-sequence<br>
 
-* Configuration
+# Project Status
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+For the next version of this app I would like to add a Completed Objectives page.<br>
+This page will document all of the completed objectives/ goals for a specific user,<br>
+and also have charts, graphs, and other visual elements to provide further analysis<br>
+on a user's progress with each of their objectives.   
