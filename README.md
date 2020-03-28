@@ -21,6 +21,7 @@ semantic-ui-react ~> 0.88.2<br>
 npm ~> 6.13.7<br>
 node ~> 13.3.0<br>
 activerecord-reset-pk-sequence<br>
+pictures from pexels.com<br>
 
 ## How to navigate this program
 
