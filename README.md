@@ -1,9 +1,9 @@
 # Elevate! App
 
-Elevate! is a web application that helps users streamline as well as<br>
-organize their daily goals for a given objective (ex. "Learn Python").<br>
-The idea for this app was to create a tool to help making the process of<br>
-learning a new skill easier, and more efficient. 
+Elevate! is a web application that helps users streamline as well as organize<br>
+their daily goals for a given objective (ex. "Learn Python"). The idea for this<br>
+app was to create a tool to help making the process of learning a new skill<br>
+easier, and more efficient. 
 
 app link- https://my-goal-tracker-app-client.herokuapp.com
 
