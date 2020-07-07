@@ -13,7 +13,7 @@ class UsersController < ApplicationController
     def create
         #byebug
         user = User.create(user_params)
-        render json: { user: UserSerializer.new(user), jwt: issue_token(user) }, status: :accepted   
+        render :json => { user: UserSerializer.new(user), jwt: issue_token(user) }, status: :accepted   
     end
 
     # def update
