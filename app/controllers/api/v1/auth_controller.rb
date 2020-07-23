@@ -8,7 +8,7 @@ class Api::V1::AuthController < ApplicationController
             token = issue_token(user)
             render json: {user:UserSerializer.new(user), jwt: token}
         else
-            render json: {error: "User not found"}, status: 401
+            render json: {error: 'User not found'}, status: 401
         end        
     end
 
