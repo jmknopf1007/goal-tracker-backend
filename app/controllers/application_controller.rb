@@ -24,7 +24,7 @@ class ApplicationController < ActionController::API
         begin
             JWT.decode(token, 'secret_key', true, {:algorithm => 'HS256'})
         rescue JWT::DecodeError
-            [{error: "Invalid Token"}]
+            [{error: 'Invalid Token'}]
         end
     end
 
